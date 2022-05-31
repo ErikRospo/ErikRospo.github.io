@@ -1,0 +1,66 @@
+* {
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+#TopBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #444;
+    z-index: 100;
+}
+
+.TopBarLink {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 10px;
+    display: inline-block;
+}
+
+#GithubLink::before {
+    content: "|";
+    font-size: large;
+    padding: 0 20px;
+    color: black;
+}
+
+.TopBarLinkContainer {
+    display: block;
+    float: left;
+}
+
+.TopBarLinkContainer::after {
+    content: "|";
+    padding: 0 10px;
+    font-size: large;
+}
+
+.TopBarLinkContainer::before {
+    padding: 0 10px;
+}
+
+#ContactList {
+    list-style: none;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+#ContactList li {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
